@@ -1,0 +1,192 @@
+#h3-carousel {
+    width: 1226px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+
+    .move-box {
+        ul {
+            li {
+                width: 1226px;
+                height: 460px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0,
+            }
+
+            li:first-child {
+                opacity: 1,
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    a.left-btn,
+    a.right-btn {
+        cursor: pointer;
+        position: absolute;
+        width: 41px;
+        height: 69px;
+        background: url(../images/3-6.png);
+        margin-top: -35px;
+        top: 50%;
+        z-index: 10;
+    }
+
+    a.left-btn {
+        left: 234px;
+        background-position-x: -84px;
+    }
+
+    a.left-btn:hover {
+        background-position-x: -1px;
+    }
+
+    a.right-btn {
+        right: 0px;
+        background-position-x: -125px;
+    }
+
+    a.right-btn:hover {
+        background-position-x: -42px;
+    }
+
+    .circle {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        z-index: 10;
+
+        li {
+            height: 6px;
+            width: 6px;
+            margin: 0 4px;
+            border: 2px solid #fff;
+            background-color: rgba(0, 0, 0, .4);
+            border-color: hsla(0, 0%, 100%, .3);
+            border-radius: 10px;
+            float: left;
+            cursor: pointer;
+        }
+
+        li.current,
+        li:hover {
+            background-color: hsla(0, 0%, 100%, .3);
+            border-color: rgba(0, 0, 0, .4);
+        }
+    }
+}
+
+
+#h3-categoryList {
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+
+    ul#categoryList {
+        height: 420px;
+        color: #fff;
+        background: rgba(105, 101, 101, .6);
+        padding: 20px 0;
+
+        li {
+            display: list-item;
+
+            a {
+                color: #fff;
+                position: relative;
+                display: block;
+                padding-left: 30px;
+                height: 42px;
+                line-height: 42px;
+
+                em {
+                    position: absolute;
+                    top: 12px;
+                    right: 20px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #e0e0e0;
+                    font-family: iconfont !important;
+                    font-style: normal;
+                }
+
+                em:before {
+                    content: '>';
+                }
+            }
+        }
+
+        li.checked {
+            background: #ff6700;
+        }
+    }
+}
+.h3-categoryContent.small{
+    width: 496px;
+}
+.h3-categoryContent {
+    width: 992px;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    border-right: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+    position: absolute;
+    left: 234px;
+    top: 0;
+    z-index: 16;
+    display: none;
+
+    .children {
+        width: 248px;
+        float: left;
+        padding: 2px 0;
+
+        li {
+            position: relative;
+            float: left;
+            width: 265px;
+            height: 76px;
+            display: list-item;
+
+            a {
+                display: block;
+                padding: 18px 20px;
+                line-height: 40px;
+
+                img {
+                    float: left;
+                    margin-right: 12px;
+                    vertical-align: middle;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                span {
+                    font-size: 14px;
+                    float: left;
+                    width: 172px;
+                    line-height: 40px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    transition: color .2s;
+                }
+
+                span:hover {
+                    color: #ff6700;
+                }
+            }
+
+        }
+    }
+}

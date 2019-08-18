@@ -1,0 +1,265 @@
+h4.s5h4 {
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 195px;
+}
+
+del.s5del {
+    color: #b0b0b0;
+}
+
+.s05-content {
+    height: 340px;
+    width: 1226px;
+    margin: 0 auto;
+
+    .s05-header {
+        height: 58px;
+        font-size: 24px;
+        line-height: 58px;
+        color: #333;
+    }
+
+    .flashpurchase {
+        position: relative;
+        text-align: center;
+    }
+
+    .mould-box,
+    .timer {
+        /*时间场次,商品盒子模型*/
+        text-align: center;
+        width: 235px;
+        height: 340px;
+        background: #f1eded;
+        border-top: 1px solid #ef3a3b;
+        float: left;
+        position: relative;
+    }
+
+    .timer {
+        .s5-round {
+            color: #ef3a3b;
+            margin: 40px 0 0 0;
+            font-size: 21px;
+            padding-top: 15px;
+        }
+
+        img {
+            margin: 25px 0;
+        }
+
+        .s5-rest-time {
+            color: rgba(0, 0, 0, .54);
+        }
+
+        /*动态时间滴滴滴*/
+        .countdown {
+            margin: 25px 0;
+
+            span {
+                display: inline-block;
+                width: 46px;
+                height: 46px;
+                line-height: 46px;
+                font-size: 24px;
+                background: #605751;
+                color: #fff;
+            }
+
+            b {
+                display: inline-block;
+                width: 15px;
+                color: #605751;
+                font-size: 28px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .button {
+        position: absolute;
+        top: -40px;
+        right: 12px;
+
+        span {
+            /*滚动按钮*/
+            display: inline-block;
+            width: 34px;
+            height: 22px;
+            border: 1px solid #e0e0e0;
+            color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        span.check {
+            color: #b0b0b0;
+            cursor: pointer;
+        }
+
+        span.check:hover {
+            color: #ff6700;
+        }
+    }
+
+    .recommend {
+        /*轮播图图片内容，名称，小字 */
+        margin: 0 14px;
+        width: 980px;
+        height: 341px;
+        position: absolute;
+        top: 0px;
+        left: 230px;
+        overflow: hidden;
+
+        ul {
+            position: absolute;
+        }
+
+        .thumb img {
+            width: 125px;
+            height: 125px;
+            padding-top: 15px;
+            padding-bottom: 35px
+        }
+    }
+
+    a.mould-box {
+        display: block;
+        margin-right: 10px;
+        background-color: #fff;
+        border-top: 1px solid red;
+
+        .conshow {
+            padding-top: 40px;
+
+            small {
+                display: inline-block;
+                color: #b0b0b0;
+                margin-bottom: 12px;
+                font-size: 12px;
+            }
+
+            .price {
+                /* 产品价格*/
+                font-size: 14px;
+                color: #ff6709;
+            }
+        }
+    }
+}
+
+.s19-content {
+    position: relative;
+    text-align: center;
+    z-index: 99;
+
+    .nav {
+        clear: both;
+
+        ul {
+            position: fixed;
+            bottom: 185px;
+            right: 0;
+        }
+
+        ul.top {
+            position: fixed;
+            bottom: 70px;
+            display: none;
+        }
+
+        a {
+            li {
+                width: 82px;
+                height: 85px;
+                border-bottom: 1px solid #f5f5f5;
+                border-left: 1px solid #f5f5f5;
+                color: #b0b0b0;
+                background: #fff;
+                font-size: 14px;
+            }
+
+            li.firstli {
+                border-top: 1px solid #f5f5f5;
+            }
+
+            img {
+                margin-top: 20px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        a:hover li p {
+            color: #ff6709;
+        }
+
+        a.app:hover li img {
+            content: url(../images/19-1.png);
+        }
+
+        a.person:hover li img {
+            content: url(../images/19-2.png);
+        }
+
+
+        a.service:hover li img {
+            content: url(../images/19-3.png);
+        }
+
+        a.customer:hover li img {
+            content: url(../images/19-4.png);
+        }
+
+        a.shopcar:hover li img {
+            content: url(../images/19-5.png);
+        }
+
+        ul.top:hover li img {
+            content: url(../images/19-6.png);
+        }
+    }
+
+
+    div.s19code {
+        display: none;
+        background: #ffffff;
+        width: 140px;
+        height: 180px;
+        position: fixed;
+        bottom: 440px;
+        right: 94px;
+        cursor: pointer;
+
+        .smallbox {
+            background: #ffffff;
+            height: 14px;
+            width: 14px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 38px;
+            right: -8px;
+        }
+
+        span {
+            display: block;
+            padding-top: 15px;
+            margin: 0 auto;
+            width: 116px;
+            height: 116px;
+            background: url(../images/19-7.png) no-repeat center;
+            background-size: 100%;
+        }
+
+        p {
+            width: 80px;
+            padding-left: 28px;
+            font-size: 14px;
+        }
+    }
+}
